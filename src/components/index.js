@@ -5,6 +5,16 @@ import Tech from "./Tech";
 import Experience from "./Experience";
 import Works from "./Works";
 import Contact from "./Contact";
-import StarsCanvas from "./canvas";
+import { StarsCanvas, BallCanvas } from "./canvas";
 
-export { Navbar, About, Tech, Experience, Works, Hero, StarsCanvas, Contact };
+export {
+  Navbar,
+  About,
+  Tech,
+  Experience,
+  Works,
+  Hero,
+  StarsCanvas,
+  BallCanvas,
+  Contact,
+};
