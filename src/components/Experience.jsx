@@ -27,7 +27,7 @@ const ExperienceCard = ({ experience, index }) => (
     }
   >
     <div>
-      <h3 className="text-white text=[24px] font-bold">{experience.title}</h3>
+      <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
       <p
         className="text-secondary text-[60px] font-semibold"
         style={{ margin: 0 }}
@@ -41,7 +41,18 @@ const ExperienceCard = ({ experience, index }) => (
           key={`experience-point-${index}`}
           className="text-white-100 text-[14px] pl-1 tracking-wider"
         >
-          {point}
+          {Array.isArray(point) ? (
+            <>
+              {point[0]}
+              <ul className="list-none">
+                {point.map((p, i) => {
+                  return i === 0 ? "" : <li className="ml-1">{`- ${p}`}</li>;
+                })}
+              </ul>
+            </>
+          ) : (
+            point
+          )}
         </li>
       ))}
     </ul>

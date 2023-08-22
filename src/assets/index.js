@@ -22,6 +22,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import typhonagency from "./company/typhonagency.png";
+import laser from "./company/laser.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -50,6 +51,7 @@ export {
   typescript,
   threejs,
   typhonagency,
+  laser,
   carrent,
   jobit,
   tripguide,
