@@ -10,7 +10,7 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience, index }) => (
+const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
     contentStyle={{ background: "#1d1836", color: "#fff" }}
     contentArrowStyle={{ borderRight: "7px solid #232631" }}
@@ -46,7 +46,11 @@ const ExperienceCard = ({ experience, index }) => (
               {point[0]}
               <ul className="list-none">
                 {point.map((p, i) => {
-                  return i === 0 ? "" : <li className="ml-1">{`- ${p}`}</li>;
+                  return i === 0 ? (
+                    ""
+                  ) : (
+                    <li key={i} className="ml-1">{`- ${p}`}</li>
+                  );
                 })}
               </ul>
             </>

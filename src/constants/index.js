@@ -91,20 +91,8 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
@@ -201,9 +189,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "LinkLift",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A carpooling platform that empowers users to effortlessly search, book, and oversee rides offered by diverse drivers, offering a seamless and effective transportation solution. This not only contributes to traffic reduction but also leads to significant cost savings.",
     tags: [
       {
         name: "react",
@@ -217,9 +205,13 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "nodejs",
+        color: "pink-text-gradient",
+      },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/karimmasri-0/LinkLift",
   },
   {
     name: "Job IT",

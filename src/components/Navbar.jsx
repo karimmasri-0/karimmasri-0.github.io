@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  console.log(navLinks);
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary `}
@@ -29,6 +28,7 @@ const Navbar = () => {
           {navLinks.map((link) => {
             return (
               <li
+                key={link.id}
                 className={`${
                   active === link.title ? "text-white" : "text-secondary"
                 } hover:text-white font-medium`}
@@ -57,6 +57,7 @@ const Navbar = () => {
               {navLinks.map((link) => {
                 return (
                   <li
+                    key={link.id}
                     className={`${
                       active === link.title ? "text-white" : "text-secondary"
                     } cursor-pointer font-poppins text-lg font-medium`}
