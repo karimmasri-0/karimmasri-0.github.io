@@ -1,7 +1,6 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -13,14 +12,12 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
   typhonagency,
   laser,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  linklift,
+  attendin,
+  ecommerce,
+  artathtetics,
 } from "../assets";
 
 export const navLinks = [
@@ -160,33 +157,6 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
     name: "LinkLift",
@@ -210,51 +180,75 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: linklift,
     source_code_link: "https://github.com/karimmasri-0/LinkLift",
   },
   {
-    name: "Job IT",
+    name: "AttendIn",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A mobile application designed to seamlessly manage student attendance within a laboratory setting, employing QR code authentication for a streamlined experience.",
+    tags: [
+      {
+        name: "react-native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "android",
+        color: "green-text-gradient",
+      },
+      {
+        name: "qr-code",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: attendin,
+    source_code_link: "https://github.com/karimmasri-0/AttendIn",
+  },
+  {
+    name: "E-commerce",
+    description:
+      "An e-commerce website designed to sell construction and working tools. It features a search filter that allows users to sort by category, price, or conduct a specific search. The site also includes a shopping cart and user profiles.",
+    tags: [
+      {
+        name: "html",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "php",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: ecommerce,
+    source_code_link: "https://github.com/karimmasri-0/CCS",
+  },
+  {
+    name: "ArtAthtetics",
+    description: "A high quality image fetcher for Soundcloud album artworks.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "flask",
+        color: "text-gray-600",
       },
       {
-        name: "supabase",
+        name: "python",
         color: "green-text-gradient",
       },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: artathtetics,
+    source_code_link: "https://github.com/karimmasri-0/ArtAthtetics",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

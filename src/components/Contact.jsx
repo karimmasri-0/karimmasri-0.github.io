@@ -13,14 +13,44 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    console.log(e);
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .send(
+        "service_e8n76lk",
+        "template_vb3qk5j",
+        {
+          from_name: form.name,
+          to_name: "Karim",
+          from_email: form.email,
+          to_email: "karimmasri52@gmail.com",
+          message: form.message,
+        },
+        "fIQqKMFVLhkc2y0Va"
+      )
+      .then(() => {
+        setLoading(false);
+        alert("Thank you. I will get back to you as soon as possible.");
+        setForm({ name: "", email: "", message: "" });
+      })
+      .catch((error) => {
+        setLoading(false);
+        console.log(error);
+        alert("Something went wrong.");
+      });
+  };
 
   return (
-    <div className="flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row">
+    <div className="items-center justify-center p-1 mx-auto xl:mt-12 sm:flex">
       <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] p-8 bg-black-100 rounded-2xl"
+        variants={slideIn("down", "tween", 0.2, 1)}
+        className="p-8 lg:w-1/2 bg-black-100 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -63,6 +93,7 @@ const Contact = () => {
             />
           </label>
           <button
+            disabled={loading ? true : false}
             className="px-8 py-3 font-bold text-white shadow-md outline-none bg-tertiary rounded-xl w-fit shadow-primary"
             type="submit"
           >
@@ -70,7 +101,6 @@ const Contact = () => {
           </button>
         </form>
       </motion.div>
-      <motion.div variants={slideIn("left", "tween", 0.2, 1)}></motion.div>
     </div>
   );
 };

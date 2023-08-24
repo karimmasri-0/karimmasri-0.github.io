@@ -24,7 +24,7 @@ const ProjectCard = ({
         <img
           src={image}
           alt={name}
-          className="object-cover w-full h-full rounded-2xl"
+          className="object-contain w-full h-full rounded-2xl"
         />
         <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
           <div
@@ -75,8 +75,22 @@ const Works = () => {
       </div>
       <div className="flex flex-wrap mt-20 gap-7 ">
         {projects.map((project, index) => (
-          <ProjectCard {...project} index={index} key={`project-${index}`} />
+          <>
+            <ProjectCard {...project} index={index} key={`project-${index}`} />
+          </>
         ))}
+        <motion.div
+          variants={fadeIn("up", "spring", projects.length * 0.5, 0.75)}
+        >
+          <Tilt
+            option={{ max: 45, scale: 1, speed: 450 }}
+            className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+          >
+            <div className="relative h-[230px] w-full flex justify-center items-center text-2xl text-secondary">
+              More to come...
+            </div>
+          </Tilt>
+        </motion.div>
       </div>
     </>
   );
