@@ -184,27 +184,6 @@ const projects = [
     source_code_link: "https://github.com/karimmasri-0/LinkLift",
   },
   {
-    name: "AttendIn",
-    description:
-      "A mobile application designed to seamlessly manage student attendance within a laboratory setting, employing QR code authentication for a streamlined experience.",
-    tags: [
-      {
-        name: "react-native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "android",
-        color: "green-text-gradient",
-      },
-      {
-        name: "qr-code",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: attendin,
-    source_code_link: "https://github.com/karimmasri-0/AttendIn",
-  },
-  {
     name: "E-commerce",
     description:
       "An e-commerce website designed to sell construction and working tools. It features a search filter that allows users to sort by category, price, or conduct a specific search. The site also includes a shopping cart and user profiles.",
@@ -226,7 +205,29 @@ const projects = [
     source_code_link: "https://github.com/karimmasri-0/CCS",
   },
   {
-    name: "ArtAthtetics",
+    name: "AttendIn",
+    description:
+      "A mobile application designed to seamlessly manage student attendance within a laboratory setting, employing QR code authentication for a streamlined experience.",
+    tags: [
+      {
+        name: "react-native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "android",
+        color: "green-text-gradient",
+      },
+      {
+        name: "qr-code",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: attendin,
+    source_code_link: "https://github.com/karimmasri-0/AttendIn",
+  },
+
+  {
+    name: "ArtAesthetics",
     description: "A high quality image fetcher for Soundcloud album artworks.",
     tags: [
       {
