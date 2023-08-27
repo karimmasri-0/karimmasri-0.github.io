@@ -2,7 +2,7 @@
 
 ## About Me
 
-Hi, I'm Karim, a dedicated and enthusiastic full stack software developer with a flair for crafting digital experiences that blend innovation and functionality. My journey in the world of programming began with an insatiable curiosity and a determination to turn ideas into reality.
+Hi, I'm [Karim](https://karimmasri-0.github.io/), a dedicated and enthusiastic full stack software developer with a flair for crafting digital experiences that blend innovation and functionality. My journey in the world of programming began with an insatiable curiosity and a determination to turn ideas into reality.
 
 ## Field of Work
 
@@ -74,3 +74,8 @@ Following projects showcase my skills and experience through real-world examples
 
 - Karim Al Masri
 - karimmasri52@gmail.com
+  
+ ### Portfolio
+
+- [Portfolio Website](https://karimmasri-0.github.io/)
+
